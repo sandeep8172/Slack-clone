@@ -1,0 +1,35 @@
+.welcome_wrapper {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 29, 33);
+    color: white;
+}
+
+.welcome_wrapper .welcome h1 {
+    font-size: 3rem;
+}
+
+.welcome_wrapper .welcome p {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: rgb(168, 167, 172);
+
+}
+
+.welcome_wrapper .welcome button {
+    position: absolute;
+    left: 95vw;
+    top: 95vh;
+    padding: 0.2rem 0.3rem;
+    color: white;
+    background-color: rgb(26, 29, 33);
+    border: 1px solid rgb(168, 167, 172);
+    border-radius: 0.3rem;
+}
+
+.welcome_wrapper .welcome button:hover {
+    background-color: rgb(147, 44, 44);
+    color: white;
+}

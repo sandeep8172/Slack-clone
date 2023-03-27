@@ -1,0 +1,65 @@
+.signin_wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 21, 75);
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    border-radius: 1rem;
+    padding: 1rem 0;
+}
+
+.container h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container form label {
+    margin-left: 4rem;
+    font-size: 1.1rem;
+}
+
+.container form input {
+    margin-left: 4rem;
+    width: 68%;
+    height: 1.6rem;
+    border: none;
+    margin-bottom: 1.5rem;
+    border-radius: 0.4rem;
+    background-color: rgb(130, 87, 130);
+    color: white;
+}
+
+.container form input::placeholder {
+    color: rgb(208, 178, 178);
+}
+
+.container form button {
+    width: 40%;
+    padding: 0.4rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 7.5rem;
+    box-shadow: 5px 5px 1px black;
+    background-color: rgb(130, 87, 130);
+    color: white;
+    cursor: pointer;
+}
+
+.container p {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container p button {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

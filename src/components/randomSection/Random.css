@@ -1,0 +1,205 @@
+.random_wrapper {
+    background-color: rgb(26, 29, 33);
+    height: 93vh;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.random_sms_scroller::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.random_sms_scroller::-webkit-scrollbar-track {
+    background: rgb(26, 29, 33);
+}
+
+.random_sms_scroller::-webkit-scrollbar-thumb {
+    background: rgb(71, 70, 70);
+    border-radius: 1rem;
+}
+
+.random {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    height: 3rem;
+    border: 1.5px rgb(49, 48, 48) solid;
+    border-left: none;
+    border-right: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.random i {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.random_bookmark {
+    border-bottom: 1.5px rgb(49, 48, 48) solid;
+    padding: 0.5rem;
+    color: rgb(168, 167, 172);
+    margin-left: 20.5vw;
+}
+
+.random_mid {
+    border-bottom: 1.5px rgb(49, 48, 48) solid;
+    padding: 2rem 1rem;
+}
+
+.random_mid div {
+    display: flex;
+    align-items: center;
+
+}
+
+.random_mid div i {
+    border: 1px solid white;
+    padding: 0.5rem;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+}
+
+.random_mid div p {
+    padding-left: 1rem;
+    font-size: 0.9rem;
+
+    color: rgb(168, 167, 172);
+}
+
+.random_mid div p span {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.random_mid div p a {
+    color: rgb(113, 113, 193);
+}
+
+
+
+.random_add_people {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    color: rgb(113, 113, 193);
+}
+
+.random_date {
+    width: 10rem;
+    margin-bottom: -3rem;
+    margin-left: 40%;
+    border: 1.5px rgb(49, 48, 48) solid;
+    padding: 0.3rem 0.7rem;
+    border-radius: 2rem;
+}
+
+.random_sms_scroller {
+    overflow-y: auto;
+    height: 24rem;
+}
+
+.random_bottom div {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.join_random {
+    color: rgb(168, 167, 172);
+}
+
+.random_bottom div i {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+}
+
+.random_time {
+    padding-left: 0.5rem;
+}
+
+.random_inputbox {
+    padding-left: 1rem;
+    width: 79%;
+    text-align: center;
+    position: fixed;
+    top: 90vh;
+    left: 20vw;
+}
+
+.random_inputbox input {
+    width: 90%;
+    height: 3rem;
+    padding: 0 3rem 0 1rem;
+    border: 2px rgb(29, 155, 209) solid;
+    border-radius: 0.5rem;
+    background-color: rgb(34, 37, 41);
+    color: white;
+}
+
+.random_inputbox input::placeholder {
+    color: rgb(113, 113, 193);
+}
+
+.random_inputbox button {
+    font-size: 1rem;
+    position: relative;
+    right: 2.5rem;
+    background-color: rgb(33, 43, 49);
+    border: none;
+}
+
+.random_inputbox button i {
+    color: rgb(168, 167, 172);
+}
+
+.random_inputbox button i:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.random_bottom ul {
+    line-height: 1.2rem;
+
+}
+
+.random_bottom ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 3.3rem;
+
+}
+
+.random_bottom ul li h5 {
+    font-size: 1rem;
+    color: rgb(217, 211, 211);
+}
+
+.random_bottom ul li h5 span {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: rgb(168, 167, 172);
+
+}
+
+.random_bottom ul li p {
+    color: rgb(168, 167, 172);
+}
+
+.random_bottom ul li i {
+    color: rgb(168, 167, 172);
+}
+
+.random_bottom ul li:hover {
+    background-color: rgb(34, 37, 41);
+}
+
+.random_bottom ul li i:hover {
+    color: red;
+    cursor: pointer;
+}

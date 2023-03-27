@@ -1,0 +1,98 @@
+.sidebar {
+    background-color: rgb(25, 23, 29);
+    width: 20vw;
+    height: 93vh;
+    float: left;
+}
+
+.sidebar_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    border-top: 1.5px rgb(49, 48, 48) solid;
+}
+
+.sidebar_top p {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(219, 207, 207);
+}
+
+.drop_down {
+    background-color: white;
+    color: rgb(25, 23, 29);
+    border-radius: 50%;
+}
+
+.new_message {
+    margin-right: 1rem;
+    background-color: #c7c2c2;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.browser_slack {
+    color: rgb(168, 167, 172);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1.5px rgb(49, 48, 48) solid;
+    border-bottom: 1.5px rgb(49, 48, 48) solid;
+}
+
+.browser_slack p {
+    padding-left: 2rem;
+    text-decoration: none;
+    color: rgb(168, 167, 172);
+}
+
+.browser_slack p i {
+    padding-right: 1rem;
+}
+
+.sidebar_content {
+    color: rgb(168, 167, 172);
+    padding-left: 1.5rem;
+    cursor: pointer;
+
+}
+
+.sidebar_content p {
+    padding: 0.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+.sidebar_content p:hover {
+    background-color: rgb(45, 42, 43);
+    border-radius: 0.5rem;
+}
+
+.sidebar_content p i {
+    padding-right: 1rem;
+}
+
+.sidebar_bottom {
+    color: rgb(168, 167, 172);
+    margin-top: 1rem;
+    padding-left: 2rem;
+    cursor: pointer;
+
+}
+
+.sidebar_bottom p {
+    padding: 0.3rem;
+}
+
+.sidebar_bottom p i {
+    margin-right: 1rem;
+}
+
+.sidebar_bottom p:nth-child(3) {
+    color: rgb(225, 221, 221);
+    font-weight: 700;
+}
