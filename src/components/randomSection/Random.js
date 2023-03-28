@@ -13,6 +13,19 @@ const Random = () => {
         setInput(event.target.value);
     };
 
+    const date = new Date();
+
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    const day = days[date.getDay()];
+    const curruntDate = date.getDate();
+    const month = date.toLocaleString("en-US", { month: "long" });
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+
+    const currentTime = `${hours}:${minutes}`
+
+    const dayMonthDate = `${day}, ${month} ${curruntDate}`
+
     const userName = localStorage.getItem("username");
     const sendButtonHandler = (event) => {
         event.preventDefault();
@@ -20,6 +33,7 @@ const Random = () => {
             .post("https://slack-clone-c6103-default-rtdb.firebaseio.com/random_sms/.json", {
                 sms: input,
                 user: userName,
+                time: currentTime,
             })
             .then(() => {
                 getDataHandler();
@@ -39,6 +53,7 @@ const Random = () => {
                         id: key,
                         sms: response.data[key].sms,
                         user: response.data[key].user,
+                        time: response.data[key].time,
                     };
                     transformedData.push(dataObj);
                 }
@@ -90,7 +105,7 @@ const Random = () => {
                     </p>
 
                     <p className="random_date">
-                        Sunday, March 26th <i className="fa-solid fa-caret-down"></i>
+                        {dayMonthDate}  <i className="fa-solid fa-caret-down"></i>
                     </p>
                 </div>
                 <div className="random_bottom">
@@ -110,7 +125,7 @@ const Random = () => {
                                     {" "}
                                     <h5>
                                         {ele.user}
-                                        <span> 2:05 PM</span>
+                                        <span> {ele.time}</span>
                                     </h5>
                                     <p>{ele.sms}</p>
                                 </section>
