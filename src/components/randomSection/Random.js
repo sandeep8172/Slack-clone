@@ -79,11 +79,11 @@ const Random = () => {
     return (
 
         <div className="random_wrapper">
-            <p className="random">
-                <div>
+            <div className="random">
+                <p>
                     <i className="fa-solid fa-hashtag"></i>random{" "}
-                </div>
-            </p>
+                </p>
+            </div>
             <p className="random_bookmark">+ Add a bookmark</p>
             <div className="random_sms_scroller">
                 <div className="random_mid">
@@ -113,7 +113,7 @@ const Random = () => {
                         <i className="fa-solid fa-user-tie"></i>
                         <p>
                             {userName.toUpperCase()}
-                            <span className="random_time">12:20PM</span>
+                            <span className="random_time">{currentTime}</span>
                             <br />
                             <span className="join_random">joined #random.</span>
                         </p>

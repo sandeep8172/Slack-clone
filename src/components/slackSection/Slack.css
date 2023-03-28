@@ -89,7 +89,8 @@
 }
 
 .slack_date {
-    width: 10rem;
+    text-align: center;
+    width: 13rem;
     margin-bottom: -3rem;
     margin-left: 40%;
     border: 1.5px rgb(49, 48, 48) solid;

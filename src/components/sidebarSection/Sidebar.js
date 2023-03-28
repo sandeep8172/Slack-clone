@@ -7,28 +7,28 @@ const Sidebar = () => {
         <div className="sidebar">
             <div className="sidebar_top">
                 <p>
-                    coders <i class="fa-solid fa-circle-chevron-down drop_down"></i>
+                    coders <i className="fa-solid fa-circle-chevron-down drop_down"></i>
                 </p>
-                <i class="fa-regular fa-message new_message"></i>
+                <i className="fa-regular fa-message new_message"></i>
             </div>
 
             <div className="browser_slack">
                 <Link to={'/home'} style={{ textDecoration: 'none' }}> <p>
-                    <i class="fa-solid fa-ellipsis-vertical"></i>Browser Slack
+                    <i className="fa-solid fa-ellipsis-vertical"></i>Browser Slack
                 </p></Link>
             </div>
 
             <div className="sidebar_content">
-                <p><i class="fa-solid fa-caret-down"></i>Channels</p>
-                <Link style={{ textDecoration: 'none' }} to={'/home/general'}><p><i class="fa-solid fa-hashtag"></i> general</p></Link>
-                <Link style={{ textDecoration: 'none' }} to={'/home/random'}><p><i class="fa-solid fa-hashtag"></i> random</p></Link>
-                <Link style={{ textDecoration: 'none' }} to={'/home/slack'}><p> <i class="fa-solid fa-hashtag"></i>slack-clone</p></Link>
-                <p><i class="fa-regular fa-square-plus"></i>Add channels</p>
+                <p><i className="fa-solid fa-caret-down"></i>Channels</p>
+                <Link style={{ textDecoration: 'none' }} to={'/home/general'}><p><i className="fa-solid fa-hashtag"></i> general</p></Link>
+                <Link style={{ textDecoration: 'none' }} to={'/home/random'}><p><i className="fa-solid fa-hashtag"></i> random</p></Link>
+                <Link style={{ textDecoration: 'none' }} to={'/home/slack'}><p> <i className="fa-solid fa-hashtag"></i>slack-clone</p></Link>
+                <p><i className="fa-regular fa-square-plus"></i>Add channels</p>
             </div>
             <div className="sidebar_bottom">
-                <p><i class="fa-solid fa-caret-down"></i>Direct messages</p>
+                <p><i className="fa-solid fa-caret-down"></i>Direct messages</p>
                 <p><i className="fa-solid fa-user-tie"></i>user profile</p>
-                <p><i class="fa-regular fa-square-plus"></i>Add coworkers</p>
+                <p><i className="fa-regular fa-square-plus"></i>Add coworkers</p>
             </div>
         </div>
     );

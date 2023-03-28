@@ -79,11 +79,11 @@ const Slack = () => {
 
     return (
         <div className="slack_wrapper">
-            <p className="slack">
-                <div>
+            <div className="slack">
+                <p>
                     <i className="fa-solid fa-hashtag"></i>slack{" "}
-                </div>
-            </p>
+                </p>
+            </div>
             <p className="slack_bookmark">+ Add a bookmark</p>
             <div className="slack_sms_scroller">
                 <div className="slack_mid">
@@ -113,7 +113,7 @@ const Slack = () => {
                         <i className="fa-solid fa-user-tie"></i>
                         <p>
                             {userName.toUpperCase()}
-                            <span className="slack_time">12:20PM</span>
+                            <span className="slack_time">{currentTime}</span>
                             <br />
                             <span className="join_slack">joined #slack.</span>
                         </p>

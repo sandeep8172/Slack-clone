@@ -76,11 +76,11 @@ const GeneralPage = () => {
     };
     return (
         <div className="general_wrapper">
-            <p className="general">
-                <div>
+            <div className="general">
+                <p>
                     <i className="fa-solid fa-hashtag"></i>general{" "}
-                </div>
-            </p>
+                </p>
+            </div>
             <p className="general_bookmark">+ Add a bookmark</p>
             <div className="general_sms_scroller">
                 <div className="general_mid">
@@ -102,7 +102,7 @@ const GeneralPage = () => {
                     </p>
 
                     <p className="general_date">
-                        {dayMonthDate}<i className="fa-solid fa-caret-down"></i>
+                        {dayMonthDate} <i className="fa-solid fa-caret-down"></i>
                     </p>
                 </div>
                 <div className="general_bottom">
@@ -110,7 +110,7 @@ const GeneralPage = () => {
                         <i className="fa-solid fa-user-tie"></i>
                         <p>
                             {userName.toUpperCase()}
-                            <span className="general_time">12:20PM</span>
+                            <span className="general_time">{currentTime}</span>
                             <br />
                             <span className="join_general">joined #general.</span>
                         </p>
